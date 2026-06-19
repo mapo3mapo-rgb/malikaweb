@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уютное Кафе "Аромат & Вкус"</title>
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fcf9f5;
+        }
+
+        /* Шапка сайта (навигация) */
+        header {
+            background-color: #4a3728;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffb703;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffb703;
+        }
+
+        /* Главный баннер (Hero section) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffb703;
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #fb8500;
+            color: #fff;
+        }
+
+        /* Секции контента */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #4a3728;
+            margin-bottom: 30px;
+        }
+
+        /* Сетка Меню */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-info {
+            padding: 20px;
+        }
+
+        .menu-item-title {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #4a3728;
+        }
+
+        .price {
+            color: #fb8500;
+            font-weight: bold;
+        }
+
+        /* Контакты */
+        .contacts {
+            background-color: #e6dfd5;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #2b1f17;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">☕ Аромат & Вкус</div>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Добро пожаловать в наше кафе</h1>
+        <p>Лучший кофе и свежая выпечка в городе каждый день</p>
+        <a href="#menu" class="btn">Посмотреть Меню</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">О нашем кафе</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 18px;">
+            Мы создали это место для тех, кто ценит настоящий уют, тепло общения и потрясающий вкус. Наш шеф-повар выбирает только свежие ингредиенты, а бариста знает секрет идеальной молочной пенки. Зайдите к нам на утренний круассан или проведите приятный вечер с друзьями.
+        </p>
+    </section>
+
+    <hr style="border: 0; height: 1px; background: #e6dfd5; margin: 40px 0;">
+
+    <section id="menu" class="container">
+        <h2 class="section-title">Популярные блюда</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=500" alt="Капучино">
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <span>Капучино</span>
+                        <span class="price">190 ₽</span>
+                    </div>
+                    <p>Классический кофейный напиток на основе эспрессо с воздушной молочной пенкой.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=500" alt="Круассан">
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <span>Круассан</span>
+                        <span class="price">140 ₽</span>
+                    </div>
+                    <p>Традиционная французская выпечка из слоеного теста. Подается теплым.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=500" alt="Пицца">
+                <div class="menu-item-info">
+                    <div class="menu-item-title">
+                        <span>Мини-пицца</span>
+                        <span class="price">320 ₽</span>
+                    </div>
+                    <p>С сочными томатами, сыром моцарелла и ароматным базиликом на тонком тесте.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2 class="section-title">Ждем вас в гости!</h2>
+        <p><strong>Адрес:</strong> ул. Кофейная, д. 12 (м. Уютная)</p>
+        <p><strong>Часы работы:</strong> Каждый день с 8:00 до 22:00</p>
+        <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Кафе "Аромат & Вкус". Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
